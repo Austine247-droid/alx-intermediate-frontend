@@ -1,0 +1,21 @@
+## Step-by-Step Guide to Install Sass
+
+### You need Node.js and npm installed.
+
+- node -v, npm -v, If not installed, download and install from: https://nodejs.org/
+
+### Step 2: Install Sass via npm
+
+- npm install -D sass
+
+### Step 3: Add Sass Files
+
+- Create a .scss file (e.g., styles.scss)
+
+### Compile Sass to CSS
+
+- Use the following command: npx sass styles.scss styles.css
+
+### To Watch for Changes Automatically:
+
+- npx sass --watch styles.scss styles.css
