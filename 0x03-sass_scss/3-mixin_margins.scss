@@ -1,0 +1,24 @@
+// instructions
+
+// Write a Sass file that assigns:
+
+// Margin left and right at 10px to body tags
+
+// Margin left and right at 15px to div tags
+
+// You must use a mixin
+
+@mixin margin($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+body {
+  @include margin(10px, 10px);
+  // The above code defines a mixin called `margin` that takes two parameters: `$left` and `$right`.
+}
+div {
+  @include margin(15px, 15px);
+  // The above code applies the mixin to the div element, setting its left and right margins to 15px.
+}
+// The above code defines a mixin called `margin` that takes two parameters: `$left` and `$right`.
+// It applies the specified left and right margins to the body and div elements using the `@include` directive.
