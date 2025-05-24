@@ -6,7 +6,7 @@
 
 ### Step 2: Install Sass via npm
 
-- npm install -D sass
+- npm install -D sass or a specific version: npm install sass@3.7.4
 
 ### Step 3: Add Sass Files
 
@@ -19,3 +19,24 @@
 ### To Watch for Changes Automatically:
 
 - npx sass --watch styles.scss styles.css
+
+### To watch a whole folder
+
+- npx sass --watch scss/:css/
+
+### (Optional): Add a Script to package.json
+
+"scripts": {
+"sass": "sass --watch scss:css"
+} With this you can run: npm run sass
+
+#### Final project structure
+
+my-project/
+│
+├── scss/
+│ └── styles.scss
+├── css/
+│ └── styles.css
+├── index.html
+├── package.json
